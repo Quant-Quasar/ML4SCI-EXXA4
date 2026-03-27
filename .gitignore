@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Model weights (stored on Google Drive)
+*.pt
+*.pth
+*.ckpt
+
+# Data files (not tracked)
+*.fits
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Outputs (generated at runtime)
+outputs/
+*.png
+*.pdf
+*.csv
+
+# Logs
+*.log
+wandb/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Colab artifacts
+content/
+drive/
