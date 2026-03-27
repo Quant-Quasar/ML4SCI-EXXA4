@@ -1,4 +1,4 @@
-# ML4SCI EXXA4 — Foundation Models for Exoplanet Characterization
+# ML4SCI EXXA4 : Foundation Models for Exoplanet Characterization
 
 [![GSoC 2026](https://img.shields.io/badge/GSoC-2026-blue.svg)](https://summerofcode.withgoogle.com/)
 [![ML4SCI](https://img.shields.io/badge/org-ML4SCI-green.svg)](https://ml4sci.org/)
@@ -6,7 +6,7 @@
 
 **Applicant:** Aditya Parashar  
 **Institution:** Birla Institute of Technology, Mesra  
-**Project:** [EXXA4 — Foundation Models for Exoplanet Characterization](https://ml4sci.org/gsoc/2026/proposal_EXXA4.html)  
+**Project:** [EXXA4 : Foundation Models for Exoplanet Characterization](https://ml4sci.org/gsoc/2026/proposal_EXXA4.html)  
 **Mentors:** Katia Matcheva, Konstantin Matchev, Sergei Gleyzer, Jason Terry, Alex Roman, Emilie Panek
 
 ---
@@ -28,7 +28,7 @@ and visual inspection.
 
 ## Results
 
-### General Test — BYOL Clustering of 150 ALMA Disk Images
+### General Test: BYOL Clustering of 150 ALMA Disk Images
 
 | Configuration | Silhouette |
 |---|---|
@@ -43,7 +43,7 @@ Key finding from Experiment D: adding physics-informed radial profile features *
 silhouette from 0.7149 → 0.6823, confirming the BYOL backbone already encodes
 morphological substructure that the hand-crafted features attempt to add.
 
-### Image-Based Test — Enhanced Autoencoder
+### Image-Based Test: Enhanced Autoencoder
 
 | Metric | Value |
 |---|---|
@@ -52,7 +52,7 @@ morphological substructure that the hand-crafted features attempt to add.
 | Latent dimension | 64 |
 | `model.encode(x)` API | ✅ |
 
-### Sequential Test — Transit Light Curve Classifier
+### Sequential Test: Transit Light Curve Classifier
 
 | Metric | Value |
 |---|---|
@@ -68,9 +68,9 @@ morphological substructure that the hand-crafted features attempt to add.
 
 | Deliverable | Status |
 |---|---|
-| `run_disk_inference(data_dir)` — full BYOL clustering pipeline on new FITS files | ✅ |
-| `run_transit_inference(X_new)` — classification with MC Dropout uncertainty | ✅ |
-| `model.encode(x)` — accessible autoencoder latent space | ✅ |
+| `run_disk_inference(data_dir)` - full BYOL clustering pipeline on new FITS files | ✅ |
+| `run_transit_inference(X_new)` - classification with MC Dropout uncertainty | ✅ |
+| `model.encode(x)` - accessible autoencoder latent space | ✅ |
 | Pre-trained weights on Google Drive | ✅ |
 | Held-out generalisation on 5 unseen disk morphologies | ✅ |
 
@@ -93,7 +93,7 @@ morphological substructure that the hand-crafted features attempt to add.
 ```
 ML4SCI-EXXA4/
 │
-├── exxa4_foundation_model_test.ipynb   # Complete evaluation test — all three tasks
+├── exxa4_foundation_model_test.ipynb   # Complete evaluation test: all three tasks
 │
 ├── requirements.txt
 ├── .gitignore
@@ -199,4 +199,11 @@ latents = ae.encode(images)  # images: (B, 1, 128, 128) → latents: (B, 64)
 - Pedregosa et al. (2011). Scikit-learn. *JMLR* 12:2825–2830.
 
 ---
-*GSoC 2026 — ML4SCI EXXA4 | [adityaparashar3434@gmail.com](mailto:adityaparashar3434@gmail.com)*
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+---
+
+*GSoC 2026 - ML4SCI EXXA4 |
