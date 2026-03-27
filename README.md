@@ -113,15 +113,36 @@ Notebooks for the GSoC coding period (Stages 2–6) will be added starting May 2
 ---
 
 ## Quick Start
-
 ```bash
 git clone https://github.com/Quant-Quasar/ML4SCI-EXXA4.git
 cd ML4SCI-EXXA4
 pip install -r requirements.txt
 ```
 
-Open `exxa4_foundation_model_test.ipynb` in Google Colab, mount Drive, and run all cells.  
-**Runtime:** ~40 minutes on a T4 GPU. No user intervention required after Drive mount.
+Open `exxa4_foundation_model_test.ipynb` in Google Colab and follow these steps:
+
+### Step 1 — Set your dataset path
+In Cell 4 (Configuration), set `DISK_DATA_PATH` to the location of your ALMA dataset
+zip or directory on Google Drive:
+```python
+DISK_DATA_PATH = '/content/drive/MyDrive/your_folder/alma_disks.zip'
+```
+
+### Step 2 — Load pre-trained weights (optional, skips training)
+In Cell 8 (Pre-Trained Model Loader), set `WEIGHTS_DIR` to a folder on your Drive
+that contains `byol_backbone.pt`, `enhanced_ae.pt`, and `transit_clf.pt`:
+```python
+WEIGHTS_DIR = '/content/drive/MyDrive/your_folder/exxa4_weights/'
+```
+If the weights are found, all three models load automatically and all training cells
+are skipped. If not found, models train from scratch (~40 min on T4).
+
+### Step 3 — Run all cells
+Runtime → Run all. No further intervention required.
+
+### Step 4 — Save weights after training (Cell 47)
+Trained weights and figures are saved automatically to `WEIGHTS_DIR` at the end of
+the notebook. On subsequent runs, set the same path in Step 2 to skip retraining.
 
 ### Inference APIs
 
@@ -196,6 +217,14 @@ latents = ae.encode(images)  # images: (B, 1, 128, 128) → latents: (B, 64)
 - Paszke et al. (2019). PyTorch. *NeurIPS 32*.
 - Astropy Collaboration (2022). Astropy v5.0. *ApJ* 935(2):167. doi:10.3847/1538-4357/ac7c74
 - Pedregosa et al. (2011). Scikit-learn. *JMLR* 12:2825–2830.
+
+---
+
+## AI Assistance Disclosure
+
+AI tools were used for code review, documentation formatting, and literature 
+citation verification. All experiments, model architectures, training runs, 
+and results are the author's own original work.
 
 ---
 
