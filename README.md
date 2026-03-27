@@ -4,8 +4,7 @@
 [![ML4SCI](https://img.shields.io/badge/org-ML4SCI-green.svg)](https://ml4sci.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Applicant:** Aditya Parashar  
-**Institution:** Birla Institute of Technology, Mesra  
+**Applicant:** Aditya Parashar    
 **Project:** [EXXA4 : Foundation Models for Exoplanet Characterization](https://ml4sci.org/gsoc/2026/proposal_EXXA4.html)  
 **Mentors:** Katia Matcheva, Konstantin Matchev, Sergei Gleyzer, Jason Terry, Alex Roman, Emilie Panek
 
