@@ -200,10 +200,4 @@ latents = ae.encode(images)  # images: (B, 1, 128, 128) → latents: (B, 64)
 
 ---
 
-## License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
----
-
-*GSoC 2026 - ML4SCI EXXA4 |
+*GSoC 2026 - ML4SCI EXXA4* 
